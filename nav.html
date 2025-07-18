@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="navstyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <style>
+.webname{
+    padding-left: 10%;
+    cursor: pointer;
+}
+.webname a {
+    text-decoration: none;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+.nav-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+.navbar-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5px;
+}
+.sidebar200 {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1c3e72;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 200;
+}
+.sidebar200 a {
+    padding:10px 15px ;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    display: block;
+    transition: 0.2s ease-in-out;
+}
+.sidebar200 a:hover {
+    background-color: #6b7cb9;
+}
+.sidebar200 .closebtn {
+    position: absolute;
+    top: 0;
+    font-size: 36px;
+    margin-left: 6px;
+}
+@media screen and (max-width: 350px){
+    .nav-links{
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nav-links a{
+font-size: small;
+    }
+}
+.tableaab{
+    width: 260px;
+}
+.tableaab a{
+    font-size: 12px;
+    border: 1px solid rgb(215, 197, 197, 0.15);
+}
+@media  screen and (max-width:260px) {
+    .tableaab{
+        width: 40%;
+    }
+    .tableaab a{
+        font-size: 7px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <navbar id="navbarrr">
+            <div class="navbar-header">
+                <div class="webname"><a onclick="toggleMenu()">&#9776</a></div>
+                <div class="webname"><a href="https://www.2dayphones.com">2DayPhones</a></div>
+            </div>
+        </div>
+        </navbar>
+      </div>
+      <div id="sidebar" class="sidebar200">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+        <table class="tableaab">
+            <tr>
+                <td><a href="..\..\..\..\Apple/iphone.html">Apple</a></td>
+                <td><a href="..\..\..\..\Samsung/samsungcat.html">Samsung</a></td>
+                <td><a href="..\..\..\..\Pixel/Pixel.html">Pixel</a></td>
+            </tr>
+            <tr>
+                <td><a href="..\..\..\..\Mi/Mi.html">Xiaomi/Redmi</a></td>
+                <td><a href="..\..\..\..\Oneplus/Oneplus.html">One Plus</a></td>
+                <td><a href="..\..\..\..\Sony/Sony.html">Sony</a></td>
+            </tr>
+            <tr>
+                <td><a href="..\..\..\..\Realme/Realme.html">Realme</a></td>
+                <td><a href="..\..\..\..\Vivo/Vivo.html">Vivo</a></td>
+                <td><a href="..\..\..\..\Motorola/Motorola.html">Motorola</a></td>
+            </tr>
+            <tr>
+                <td><a href="..\..\..\..\Oppo/Oppo.html">Oppo</a></td>
+            </tr>
+        </table><br>
+        <a href="..\..\..\..\..\&/about.html">About Us</a>
+        <a href="..\..\..\..\..\&/policy.html">Privacy Policy</a>
+        <a href="..\..\..\..\..\&/contact.html">Contact Us</a>
+    </div>
+</body>
+</html>
